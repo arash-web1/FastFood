@@ -1,0 +1,57 @@
+.btn {
+  appearance: none;
+  border: none;
+  cursor: pointer;
+
+  padding: 15px 30px;
+  border-radius: var(--radius-btn);
+
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  transition: filter 0.2s ease, transform 0.15s ease, background 0.2s ease;
+}
+
+.btn:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+/* Основная — оранжевая, белый текст (как в Figma) */
+.primary {
+  background: var(--color-accent);
+  color: #ffffff;
+}
+
+.primary:hover {
+  background: var(--color-accent-strong);
+  filter: brightness(1.03);
+}
+
+.primary:active {
+  transform: translateY(1px);
+}
+
+/* Вторичная — прозрачная с обводкой */
+.ghost {
+  background: transparent;
+  color: var(--color-text);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.ghost:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn {
+    transition: none;
+  }
+  .primary:active {
+    transform: none;
+  }
+}
