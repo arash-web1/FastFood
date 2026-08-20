@@ -3,7 +3,6 @@ import styles from './Hero.module.css';
 import heroBurger from './hero-burger.png';
 
 export default function Hero() {
-  // Тёмный градиент слева + фото бургера справа — одним фоном.
   const background = `linear-gradient(
       90deg,
       rgba(20, 15, 16, 0.96) 0%,
