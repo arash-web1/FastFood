@@ -1,11 +1,13 @@
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
+import Foodlist from './components/Foodlist/Foodlist';
 
 export default function App() {
   return (
     <div className="page">
       <Header />
       <Hero />
+      <Foodlist/>
     </div>
   );
 }
